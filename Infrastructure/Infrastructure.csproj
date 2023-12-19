@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.24" />
+    <PackageReference Include="microsoft.data.sqlclient" Version="5.1.2" />
+    <PackageReference Include="microsoft.entityframeworkcore" Version="8.0.0" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="8.0.0" />
+    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Scrutor" Version="4.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DapperQueries\ApplicationUserQueries\IRelativeQueries\" />
+    <Folder Include="Repositories\ApplicationUserRepository\RelativesRepositories\" />
+  </ItemGroup>
+
+</Project>
